@@ -1,0 +1,188 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "category",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "name": "ProductsIntent",
+          "samples": [
+            "tell me the products in {category}",
+            "show {category}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "product",
+              "type": "productList"
+            }
+          ],
+          "name": "ProductDetailsIntent",
+          "samples": [
+            "what do you know about {product}",
+            "know more about {product}",
+            "tell me details of {product}"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "CategoriesIntent",
+          "samples": [
+            "show categories",
+            "see categories",
+            "what categories are there",
+            "what can I buy",
+            "tell me the categories"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "producto",
+              "type": "productList"
+            }
+          ],
+          "name": "AddProductToCartIntent",
+          "samples": [
+            "add {producto} to my list",
+            "select {producto}",
+            "buy {producto}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "shirts"
+              }
+            },
+            {
+              "name": {
+                "value": "pants"
+              }
+            },
+            {
+              "name": {
+                "value": "jackets"
+              }
+            },
+            {
+              "name": {
+                "value": "shoes"
+              }
+            },
+            {
+              "name": {
+                "value": "dresses"
+              }
+            },
+            {
+              "name": {
+                "value": "blouses"
+              }
+            },
+            {
+              "name": {
+                "value": "skirts"
+              }
+            },
+            {
+              "name": {
+                "value": "heels"
+              }
+            },
+            {
+              "name": {
+                "value": "t-shirts"
+              }
+            },
+            {
+              "name": {
+                "value": "sets"
+              }
+            },
+            {
+              "name": {
+                "value": "tennis"
+              }
+            },
+            {
+              "name": {
+                "value": "long dresses"
+              }
+            },
+            {
+              "name": {
+                "value": "short dresses"
+              }
+            },
+            {
+              "name": {
+                "value": "princess style dresses"
+              }
+            },
+            {
+              "name": {
+                "value": "accessories"
+              }
+            }
+          ],
+          "name": "productList"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "clothes for men"
+              }
+            },
+            {
+              "name": {
+                "value": "clothes for women"
+              }
+            },
+            {
+              "name": {
+                "value": "clothes for children"
+              }
+            },
+            {
+              "name": {
+                "value": "15 year old dresses"
+              }
+            }
+          ],
+          "name": "categoryList"
+        }
+      ],
+      "invocationName": "sastreria los pajaritos"
+    }
+  }
+}

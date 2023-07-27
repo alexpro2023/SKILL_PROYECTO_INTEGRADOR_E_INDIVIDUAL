@@ -1,0 +1,214 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "slots": [],
+          "name": "LaunchRequest",
+          "samples": [
+            "abrir tienda",
+            "iniciar tienda",
+            "mostrar tienda"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "name",
+              "type": "AMAZON.FirstName"
+            }
+          ],
+          "name": "GuardarNombreIntent",
+          "samples": [
+            "mi nombre es {name}",
+            "regístrame como {name}",
+            "guárdame como {name}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "producto",
+              "type": "productList"
+            }
+          ],
+          "name": "AddProductToCartIntent",
+          "samples": [
+            "seleccionar {producto}",
+            "añadir {producto} a mi carrito",
+            "agregar {producto} a mi lista",
+            "comprar {producto}"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "CategoriesIntent",
+          "samples": [
+            "mostrar categorías",
+            "ver categorías",
+            "qué categorías hay",
+            "qué puedo comprar",
+            "dime las categorías"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "category",
+              "type": "categoryList"
+            }
+          ],
+          "name": "ProductsIntent",
+          "samples": [
+            "mostrar {category}",
+            "qué hay en {category}",
+            "dime los productos en {category}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "product",
+              "type": "productList"
+            }
+          ],
+          "name": "ProductDetailsIntent",
+          "samples": [
+            "saber mas de {product}",
+            "dime más sobre {product}",
+            "dime detalles de {product}",
+            "qué sabes sobre {product}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "ropa para hombres"
+              }
+            },
+            {
+              "name": {
+                "value": "ropa para mujeres"
+              }
+            },
+            {
+              "name": {
+                "value": "ropa para niños"
+              }
+            },
+            {
+              "name": {
+                "value": "vestidos de 15 años"
+              }
+            }
+          ],
+          "name": "categoryList"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "camisas"
+              }
+            },
+            {
+              "name": {
+                "value": "pantalones"
+              }
+            },
+            {
+              "name": {
+                "value": "chaquetas"
+              }
+            },
+            {
+              "name": {
+                "value": "zapatos"
+              }
+            },
+            {
+              "name": {
+                "value": "vestidos"
+              }
+            },
+            {
+              "name": {
+                "value": "blusas"
+              }
+            },
+            {
+              "name": {
+                "value": "faldas"
+              }
+            },
+            {
+              "name": {
+                "value": "tacones"
+              }
+            },
+            {
+              "name": {
+                "value": "playeras"
+              }
+            },
+            {
+              "name": {
+                "value": "conjuntos"
+              }
+            },
+            {
+              "name": {
+                "value": "tenis"
+              }
+            },
+            {
+              "name": {
+                "value": "vestidos largos"
+              }
+            },
+            {
+              "name": {
+                "value": "vestidos cortos"
+              }
+            },
+            {
+              "name": {
+                "value": "vestidos estilo princesa"
+              }
+            },
+            {
+              "name": {
+                "value": "accesorios"
+              }
+            }
+          ],
+          "name": "productList"
+        }
+      ],
+      "invocationName": "sastreria pajaritos"
+    }
+  }
+}
